@@ -1,0 +1,12 @@
+syntax = "proto3";
+package oto;
+service one_to_one {
+    rpc Add_count (addition) returns (count);
+}
+message addition {
+    int32 index=1;
+}
+
+message count {
+    int32 result=1;
+}

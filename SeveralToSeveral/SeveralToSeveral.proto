@@ -1,0 +1,11 @@
+syntax = "proto3";
+package sts;
+service SeveralToSeveral {
+    rpc GetCnt(AddCntRequest) returns (ValueOfCnt);
+}
+message AddCntRequest {
+    int32 index=1;
+}
+message ValueOfCnt {
+    int32 value=1;
+}

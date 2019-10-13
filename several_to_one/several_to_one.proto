@@ -1,0 +1,13 @@
+syntax = "proto3";
+package sto;
+service several_to_one {
+    rpc GetCount0 (AddCount0Request) returns (ValueOfCount0);
+}
+message AddCount0Request {
+    int32 index=1;
+}
+
+message ValueOfCount0 {
+    int32 value0=1;
+    int32 value1=2;
+}
